@@ -5,20 +5,33 @@
 //  Created by junya-ogasawara on 2016/08/16.
 //  Copyright © 2016年 COOKPAD inc,. All rights reserved.
 //
-
 import UIKit
+import APIKit
 
 class RecommendItemsViewController: UITableViewController {
     
-    let items: [Item] = [
-        Item(id: 1, name: "おたま", desc: "おたまです", price: 100, imageURL: NSURL(string: "http://example.com")!),
-        Item(id: 2, name: "しゃもじ", desc: "しゃもじです", price: 200, imageURL: NSURL(string: "http://example.com")!),
-        Item(id: 3, name: "菜箸", desc: "菜箸です", price: 300, imageURL: NSURL(string: "http://example.com")!),
-    ]
+    var items: [Item] = [] {
+        didSet {
+            tableView.reloadData()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
 
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+
+        let request = RecommendItemsRequest()
+        Session.sendRequest(request) { result in
+            switch result {
+            case .Success(let response):
+                self.items = response
+            case .Failure(let error):
+                print(error)
+            }
+        }
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

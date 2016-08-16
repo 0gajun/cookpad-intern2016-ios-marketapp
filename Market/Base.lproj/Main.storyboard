@@ -89,6 +89,11 @@
                                         <constraint firstItem="18A-hc-En5" firstAttribute="leading" secondItem="bMa-II-GQu" secondAttribute="leadingMargin" id="mvV-H3-RyC"/>
                                         <constraint firstItem="tBE-A1-dTm" firstAttribute="leading" secondItem="St2-a6-cSw" secondAttribute="leading" id="ou0-NZ-N8N"/>
                                     </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="cRt-Qr-8DU"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="descriptionLabel" destination="ced-ij-6hw" id="pPx-8l-3uX"/>

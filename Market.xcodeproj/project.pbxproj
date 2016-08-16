@@ -19,6 +19,8 @@
 		556925101D62CAB30000C1C0 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5569250B1D62CAB30000C1C0 /* Himotoki.framework */; };
 		556925111D62CAB30000C1C0 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5569250C1D62CAB30000C1C0 /* Result.framework */; };
 		556925121D62CAB30000C1C0 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5569250D1D62CAB30000C1C0 /* WebImage.framework */; };
+		556925161D62D02C0000C1C0 /* MarketRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556925151D62D02C0000C1C0 /* MarketRequestType.swift */; };
+		556925181D62D1C60000C1C0 /* RecommendItemsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556925171D62D1C60000C1C0 /* RecommendItemsRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		5569250B1D62CAB30000C1C0 /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
 		5569250C1D62CAB30000C1C0 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		5569250D1D62CAB30000C1C0 /* WebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebImage.framework; path = Carthage/Build/iOS/WebImage.framework; sourceTree = "<group>"; };
+		556925151D62D02C0000C1C0 /* MarketRequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketRequestType.swift; sourceTree = "<group>"; };
+		556925171D62D1C60000C1C0 /* RecommendItemsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendItemsRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				556925071D62B01E0000C1C0 /* Item.swift */,
+				556925151D62D02C0000C1C0 /* MarketRequestType.swift */,
+				556925171D62D1C60000C1C0 /* RecommendItemsRequest.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -217,8 +223,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				556925081D62B01E0000C1C0 /* Item.swift in Sources */,
+				556925181D62D1C60000C1C0 /* RecommendItemsRequest.swift in Sources */,
 				55424C781D62A4AF0045F6AE /* RecommendItemCell.swift in Sources */,
 				55424C761D629F070045F6AE /* RecommendItemsViewController.swift in Sources */,
+				556925161D62D02C0000C1C0 /* MarketRequestType.swift in Sources */,
 				55424C5F1D629A6D0045F6AE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
