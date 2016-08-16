@@ -22,6 +22,7 @@
 		556925161D62D02C0000C1C0 /* MarketRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556925151D62D02C0000C1C0 /* MarketRequestType.swift */; };
 		556925181D62D1C60000C1C0 /* RecommendItemsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556925171D62D1C60000C1C0 /* RecommendItemsRequest.swift */; };
 		5569251C1D62DF880000C1C0 /* ItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5569251B1D62DF880000C1C0 /* ItemDetailsViewController.swift */; };
+		5569251E1D62E5180000C1C0 /* ItemRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5569251D1D62E5180000C1C0 /* ItemRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		556925151D62D02C0000C1C0 /* MarketRequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketRequestType.swift; sourceTree = "<group>"; };
 		556925171D62D1C60000C1C0 /* RecommendItemsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendItemsRequest.swift; sourceTree = "<group>"; };
 		5569251B1D62DF880000C1C0 /* ItemDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewController.swift; sourceTree = "<group>"; };
+		5569251D1D62E5180000C1C0 /* ItemRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				556925071D62B01E0000C1C0 /* Item.swift */,
 				556925151D62D02C0000C1C0 /* MarketRequestType.swift */,
 				556925171D62D1C60000C1C0 /* RecommendItemsRequest.swift */,
+				5569251D1D62E5180000C1C0 /* ItemRequest.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				556925181D62D1C60000C1C0 /* RecommendItemsRequest.swift in Sources */,
 				55424C781D62A4AF0045F6AE /* RecommendItemCell.swift in Sources */,
 				55424C761D629F070045F6AE /* RecommendItemsViewController.swift in Sources */,
+				5569251E1D62E5180000C1C0 /* ItemRequest.swift in Sources */,
 				556925161D62D02C0000C1C0 /* MarketRequestType.swift in Sources */,
 				5569251C1D62DF880000C1C0 /* ItemDetailsViewController.swift in Sources */,
 				55424C5F1D629A6D0045F6AE /* AppDelegate.swift in Sources */,

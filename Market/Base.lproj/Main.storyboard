@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -121,12 +122,72 @@
                     <view key="view" contentMode="scaleToFill" id="0r4-Qm-uyu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kAp-ma-BS7">
+                                <rect key="frame" x="36" y="72" width="528" height="297"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kAp-ma-BS7" secondAttribute="height" multiplier="16:9" id="X58-7R-B1Q"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsK-0I-hin">
+                                <rect key="frame" x="36" y="379" width="43" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="a5I-Y2-LJz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEq-2p-031">
+                                <rect key="frame" x="525" y="379" width="39" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="uVm-Qt-5vw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="di2-ZP-pdQ">
+                                <rect key="frame" x="36" y="416" width="528" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="gob-wZ-TgJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXL-JY-NTg">
+                                <rect key="frame" x="248" y="453" width="105" height="30"/>
+                                <state key="normal" title="カートに入れる"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="di2-ZP-pdQ" firstAttribute="top" secondItem="wsK-0I-hin" secondAttribute="bottom" constant="16" id="0S5-qw-da3"/>
+                            <constraint firstItem="wsK-0I-hin" firstAttribute="top" secondItem="kAp-ma-BS7" secondAttribute="bottom" constant="10" id="8Mv-4P-QPU"/>
+                            <constraint firstItem="wsK-0I-hin" firstAttribute="leading" secondItem="kAp-ma-BS7" secondAttribute="leading" id="Hge-bp-zRa"/>
+                            <constraint firstItem="di2-ZP-pdQ" firstAttribute="trailing" secondItem="kAp-ma-BS7" secondAttribute="trailing" id="LWd-ot-UH6"/>
+                            <constraint firstItem="kAp-ma-BS7" firstAttribute="top" secondItem="Tng-1j-S22" secondAttribute="bottom" constant="8" id="NV0-tw-n2a"/>
+                            <constraint firstItem="NEq-2p-031" firstAttribute="top" secondItem="kAp-ma-BS7" secondAttribute="bottom" constant="10" id="ZUY-7c-1Sd"/>
+                            <constraint firstItem="NEq-2p-031" firstAttribute="trailing" secondItem="kAp-ma-BS7" secondAttribute="trailing" id="d5a-Jf-PzQ"/>
+                            <constraint firstItem="kAp-ma-BS7" firstAttribute="leading" secondItem="0r4-Qm-uyu" secondAttribute="leadingMargin" constant="16" id="e7f-ht-vb7"/>
+                            <constraint firstItem="LXL-JY-NTg" firstAttribute="centerX" secondItem="kAp-ma-BS7" secondAttribute="centerX" id="lj9-3Q-hjq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kAp-ma-BS7" secondAttribute="trailing" constant="16" id="pdg-I4-9W4"/>
+                            <constraint firstItem="di2-ZP-pdQ" firstAttribute="leading" secondItem="kAp-ma-BS7" secondAttribute="leading" id="q5I-9Q-g93"/>
+                            <constraint firstItem="LXL-JY-NTg" firstAttribute="top" secondItem="di2-ZP-pdQ" secondAttribute="bottom" constant="16" id="zHU-gD-p9Q"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addCartButton" destination="LXL-JY-NTg" id="EHg-kX-iZa"/>
+                        <outlet property="descriptionLabel" destination="di2-ZP-pdQ" id="4Wy-4X-uWY"/>
+                        <outlet property="nameLabel" destination="wsK-0I-hin" id="0UV-qn-NXy"/>
+                        <outlet property="priceLabel" destination="NEq-2p-031" id="7nA-g8-vO0"/>
+                        <outlet property="thumbnailImage" destination="kAp-ma-BS7" id="6Gn-k3-T8k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gKQ-qa-Lf8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2310" y="0.0"/>
+            <point key="canvasLocation" x="2321" y="-8"/>
         </scene>
         <!--Item-->
         <scene sceneID="ptx-cV-JvA">
