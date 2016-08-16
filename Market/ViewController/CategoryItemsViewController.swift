@@ -50,10 +50,13 @@ class CategoryItemsViewController: UICollectionViewController {
         
         let item = items[indexPath.row]
         cell.update(withItem: item)
+        // TODO: 影をどうにかしてうまくつける
+        // TODO: セルの幅計算して、いい感じに並べる
     
         return cell
     }
-
+    
+    
     // MARK: UICollectionViewDelegate
 
     /*
