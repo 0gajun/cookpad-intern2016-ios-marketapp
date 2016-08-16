@@ -156,6 +156,7 @@
                                 <connections>
                                     <outlet property="nameLabel" destination="hIv-gW-lS2" id="48X-fC-IyQ"/>
                                     <outlet property="thumbnailView" destination="td2-fV-Z9I" id="qkS-Ll-4Mr"/>
+                                    <segue destination="bv9-c3-S2C" kind="show" id="B0I-IX-D6E"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -169,6 +170,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U4B-KI-WYq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1558" y="747"/>
+        </scene>
+        <!--Category Items View Controller-->
+        <scene sceneID="W3v-PW-i6N">
+            <objects>
+                <collectionViewController id="bv9-c3-S2C" customClass="CategoryItemsViewController" customModule="Market" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="lpY-bf-PDA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="xXk-EL-lEy">
+                            <size key="itemSize" width="100" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryItemsCollectionViewCell" id="KFt-mN-ZDe" customClass="CategoryItemsCollectionViewCell" customModule="Market" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dis-BK-JbI">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Joe-wY-iHH">
+                                            <rect key="frame" x="14" y="76" width="72" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="1" green="0.98352687629314894" blue="0.97742942647927678" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Dis-BK-JbI" firstAttribute="top" secondItem="KFt-mN-ZDe" secondAttribute="top" id="BO6-l5-Okv"/>
+                                    <constraint firstItem="Joe-wY-iHH" firstAttribute="leading" secondItem="KFt-mN-ZDe" secondAttribute="leadingMargin" constant="6" id="CVC-eu-wj5"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dis-BK-JbI" secondAttribute="bottom" id="Z87-Ch-hBS"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dis-BK-JbI" secondAttribute="trailing" id="ZGn-wB-bSf"/>
+                                    <constraint firstItem="Joe-wY-iHH" firstAttribute="centerX" secondItem="KFt-mN-ZDe" secondAttribute="centerX" id="fS3-lk-Pg8"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="Joe-wY-iHH" secondAttribute="trailing" constant="6" id="q9g-1B-BRm"/>
+                                    <constraint firstItem="Dis-BK-JbI" firstAttribute="leading" secondItem="KFt-mN-ZDe" secondAttribute="leading" id="sFL-Wo-tAh"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="Joe-wY-iHH" secondAttribute="bottom" id="syf-Eh-JzC"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="categoryImage" destination="Dis-BK-JbI" id="8PC-ud-dVg"/>
+                                    <outlet property="nameLabel" destination="Joe-wY-iHH" id="xCV-rf-y12"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="bv9-c3-S2C" id="hJj-4s-osX"/>
+                            <outlet property="delegate" destination="bv9-c3-S2C" id="5T8-zp-a9h"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9DI-JC-vdn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2321" y="747"/>
         </scene>
         <!--Item Details View Controller-->
         <scene sceneID="oJh-fh-5LP">
@@ -252,7 +314,7 @@
         <scene sceneID="ptx-cV-JvA">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a8J-xP-s9s" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="おすすめ" image="star" id="t13-WR-IT1"/>
+                    <tabBarItem key="tabBarItem" title="おすすめ" id="t13-WR-IT1"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="35D-cg-aIr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -287,7 +349,4 @@
             <point key="canvasLocation" x="746" y="747"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="star" width="33" height="33"/>
-    </resources>
 </document>
