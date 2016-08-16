@@ -13,6 +13,7 @@
 		55424C6B1D629A6E0045F6AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55424C691D629A6E0045F6AE /* LaunchScreen.storyboard */; };
 		55424C761D629F070045F6AE /* RecommendItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55424C751D629F070045F6AE /* RecommendItemsViewController.swift */; };
 		55424C781D62A4AF0045F6AE /* RecommendItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55424C771D62A4AF0045F6AE /* RecommendItemCell.swift */; };
+		556925081D62B01E0000C1C0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556925071D62B01E0000C1C0 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		55424C6C1D629A6E0045F6AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55424C751D629F070045F6AE /* RecommendItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendItemsViewController.swift; sourceTree = "<group>"; };
 		55424C771D62A4AF0045F6AE /* RecommendItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendItemCell.swift; sourceTree = "<group>"; };
+		556925071D62B01E0000C1C0 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		55424C721D629B970045F6AE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				556925071D62B01E0000C1C0 /* Item.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				556925081D62B01E0000C1C0 /* Item.swift in Sources */,
 				55424C781D62A4AF0045F6AE /* RecommendItemCell.swift in Sources */,
 				55424C761D629F070045F6AE /* RecommendItemsViewController.swift in Sources */,
 				55424C5F1D629A6D0045F6AE /* AppDelegate.swift in Sources */,
@@ -316,6 +320,7 @@
 				55424C711D629A6E0045F6AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

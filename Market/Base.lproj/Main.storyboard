@@ -53,7 +53,7 @@
                                                 <constraint firstAttribute="height" constant="21" id="yr6-sD-Vci"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBE-A1-dTm">
@@ -62,16 +62,16 @@
                                                 <constraint firstAttribute="height" constant="21" id="MXF-IH-wQ1"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ced-ij-6hw">
-                                            <rect key="frame" x="98" y="60" width="174" height="21"/>
+                                            <rect key="frame" x="98" y="60" width="484" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="JLQ-tc-L6R"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -83,7 +83,7 @@
                                         <constraint firstItem="St2-a6-cSw" firstAttribute="leading" secondItem="18A-hc-En5" secondAttribute="trailing" constant="10" id="ICV-04-3LP"/>
                                         <constraint firstItem="ced-ij-6hw" firstAttribute="leading" secondItem="St2-a6-cSw" secondAttribute="leading" id="IJO-G7-fBR"/>
                                         <constraint firstItem="18A-hc-En5" firstAttribute="top" secondItem="bMa-II-GQu" secondAttribute="topMargin" id="OyF-43-bFx"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="ced-ij-6hw" secondAttribute="trailing" constant="320" id="aVX-Yl-S7S"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ced-ij-6hw" secondAttribute="trailing" constant="10" id="aVX-Yl-S7S"/>
                                         <constraint firstItem="St2-a6-cSw" firstAttribute="top" secondItem="bMa-II-GQu" secondAttribute="topMargin" constant="2" id="bas-Kr-ai6"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="ced-ij-6hw" secondAttribute="bottom" constant="6" id="cRt-Qr-8DU"/>
                                         <constraint firstItem="18A-hc-En5" firstAttribute="leading" secondItem="bMa-II-GQu" secondAttribute="leadingMargin" id="mvV-H3-RyC"/>
