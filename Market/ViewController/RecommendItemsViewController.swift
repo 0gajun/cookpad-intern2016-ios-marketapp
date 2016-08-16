@@ -18,6 +18,8 @@ class RecommendItemsViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.estimatedRowHeight = RecommendItemCell.height
+        tableView.rowHeight = UITableViewAutomaticDimension
     }
 
     override func viewWillAppear(animated: Bool) {

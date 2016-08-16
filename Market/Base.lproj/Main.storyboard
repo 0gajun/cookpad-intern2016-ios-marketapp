@@ -85,15 +85,10 @@
                                         <constraint firstItem="18A-hc-En5" firstAttribute="top" secondItem="bMa-II-GQu" secondAttribute="topMargin" id="OyF-43-bFx"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="ced-ij-6hw" secondAttribute="trailing" constant="10" id="aVX-Yl-S7S"/>
                                         <constraint firstItem="St2-a6-cSw" firstAttribute="top" secondItem="bMa-II-GQu" secondAttribute="topMargin" constant="2" id="bas-Kr-ai6"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="ced-ij-6hw" secondAttribute="bottom" constant="6" id="cRt-Qr-8DU"/>
                                         <constraint firstItem="18A-hc-En5" firstAttribute="leading" secondItem="bMa-II-GQu" secondAttribute="leadingMargin" id="mvV-H3-RyC"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ced-ij-6hw" secondAttribute="bottom" constant="6" id="naf-hc-G40"/>
                                         <constraint firstItem="tBE-A1-dTm" firstAttribute="leading" secondItem="St2-a6-cSw" secondAttribute="leading" id="ou0-NZ-N8N"/>
                                     </constraints>
-                                    <variation key="default">
-                                        <mask key="constraints">
-                                            <exclude reference="cRt-Qr-8DU"/>
-                                        </mask>
-                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="descriptionLabel" destination="ced-ij-6hw" id="pPx-8l-3uX"/>
