@@ -8,22 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		55424C5F1D629A6D0045F6AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55424C5E1D629A6D0045F6AE /* AppDelegate.swift */; };
-		55424C611D629A6D0045F6AE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55424C601D629A6D0045F6AE /* FirstViewController.swift */; };
-		55424C631D629A6E0045F6AE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55424C621D629A6D0045F6AE /* SecondViewController.swift */; };
 		55424C661D629A6E0045F6AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55424C641D629A6E0045F6AE /* Main.storyboard */; };
 		55424C681D629A6E0045F6AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55424C671D629A6E0045F6AE /* Assets.xcassets */; };
 		55424C6B1D629A6E0045F6AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55424C691D629A6E0045F6AE /* LaunchScreen.storyboard */; };
+		55424C761D629F070045F6AE /* RecommendItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55424C751D629F070045F6AE /* RecommendItemsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		55424C5B1D629A6D0045F6AE /* Market.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Market.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55424C5E1D629A6D0045F6AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		55424C601D629A6D0045F6AE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		55424C621D629A6D0045F6AE /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		55424C651D629A6E0045F6AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55424C671D629A6E0045F6AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55424C6A1D629A6E0045F6AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55424C6C1D629A6E0045F6AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55424C751D629F070045F6AE /* RecommendItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendItemsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +58,6 @@
 				55424C731D629BD90045F6AE /* View */,
 				55424C741D629BDF0045F6AE /* ViewController */,
 				55424C5E1D629A6D0045F6AE /* AppDelegate.swift */,
-				55424C601D629A6D0045F6AE /* FirstViewController.swift */,
-				55424C621D629A6D0045F6AE /* SecondViewController.swift */,
 				55424C641D629A6E0045F6AE /* Main.storyboard */,
 				55424C671D629A6E0045F6AE /* Assets.xcassets */,
 				55424C691D629A6E0045F6AE /* LaunchScreen.storyboard */,
@@ -87,6 +83,7 @@
 		55424C741D629BDF0045F6AE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				55424C751D629F070045F6AE /* RecommendItemsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -162,9 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55424C631D629A6E0045F6AE /* SecondViewController.swift in Sources */,
+				55424C761D629F070045F6AE /* RecommendItemsViewController.swift in Sources */,
 				55424C5F1D629A6D0045F6AE /* AppDelegate.swift in Sources */,
-				55424C611D629A6D0045F6AE /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
