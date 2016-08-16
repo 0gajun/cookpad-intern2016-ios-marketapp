@@ -23,6 +23,10 @@
 		556925181D62D1C60000C1C0 /* RecommendItemsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556925171D62D1C60000C1C0 /* RecommendItemsRequest.swift */; };
 		5569251C1D62DF880000C1C0 /* ItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5569251B1D62DF880000C1C0 /* ItemDetailsViewController.swift */; };
 		5569251E1D62E5180000C1C0 /* ItemRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5569251D1D62E5180000C1C0 /* ItemRequest.swift */; };
+		556925201D62EA690000C1C0 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5569251F1D62EA690000C1C0 /* CategoryCell.swift */; };
+		556925221D62EAFE0000C1C0 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556925211D62EAFE0000C1C0 /* Category.swift */; };
+		556925241D62EB830000C1C0 /* CategoriesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556925231D62EB830000C1C0 /* CategoriesRequest.swift */; };
+		556925261D62ECC70000C1C0 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556925251D62ECC70000C1C0 /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,10 @@
 		556925171D62D1C60000C1C0 /* RecommendItemsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendItemsRequest.swift; sourceTree = "<group>"; };
 		5569251B1D62DF880000C1C0 /* ItemDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewController.swift; sourceTree = "<group>"; };
 		5569251D1D62E5180000C1C0 /* ItemRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemRequest.swift; sourceTree = "<group>"; };
+		5569251F1D62EA690000C1C0 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		556925211D62EAFE0000C1C0 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		556925231D62EB830000C1C0 /* CategoriesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesRequest.swift; sourceTree = "<group>"; };
+		556925251D62ECC70000C1C0 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,8 @@
 				556925151D62D02C0000C1C0 /* MarketRequestType.swift */,
 				556925171D62D1C60000C1C0 /* RecommendItemsRequest.swift */,
 				5569251D1D62E5180000C1C0 /* ItemRequest.swift */,
+				556925211D62EAFE0000C1C0 /* Category.swift */,
+				556925231D62EB830000C1C0 /* CategoriesRequest.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -109,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				55424C771D62A4AF0045F6AE /* RecommendItemCell.swift */,
+				5569251F1D62EA690000C1C0 /* CategoryCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -118,6 +129,7 @@
 			children = (
 				55424C751D629F070045F6AE /* RecommendItemsViewController.swift */,
 				5569251B1D62DF880000C1C0 /* ItemDetailsViewController.swift */,
+				556925251D62ECC70000C1C0 /* CategoryViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -229,10 +241,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				556925081D62B01E0000C1C0 /* Item.swift in Sources */,
+				556925241D62EB830000C1C0 /* CategoriesRequest.swift in Sources */,
+				556925221D62EAFE0000C1C0 /* Category.swift in Sources */,
 				556925181D62D1C60000C1C0 /* RecommendItemsRequest.swift in Sources */,
+				556925261D62ECC70000C1C0 /* CategoryViewController.swift in Sources */,
 				55424C781D62A4AF0045F6AE /* RecommendItemCell.swift in Sources */,
 				55424C761D629F070045F6AE /* RecommendItemsViewController.swift in Sources */,
 				5569251E1D62E5180000C1C0 /* ItemRequest.swift in Sources */,
+				556925201D62EA690000C1C0 /* CategoryCell.swift in Sources */,
 				556925161D62D02C0000C1C0 /* MarketRequestType.swift in Sources */,
 				5569251C1D62DF880000C1C0 /* ItemDetailsViewController.swift in Sources */,
 				55424C5F1D629A6D0045F6AE /* AppDelegate.swift in Sources */,
