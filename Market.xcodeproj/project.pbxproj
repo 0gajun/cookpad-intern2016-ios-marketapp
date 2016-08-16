@@ -21,6 +21,7 @@
 		556925121D62CAB30000C1C0 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5569250D1D62CAB30000C1C0 /* WebImage.framework */; };
 		556925161D62D02C0000C1C0 /* MarketRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556925151D62D02C0000C1C0 /* MarketRequestType.swift */; };
 		556925181D62D1C60000C1C0 /* RecommendItemsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556925171D62D1C60000C1C0 /* RecommendItemsRequest.swift */; };
+		5569251C1D62DF880000C1C0 /* ItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5569251B1D62DF880000C1C0 /* ItemDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		5569250D1D62CAB30000C1C0 /* WebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebImage.framework; path = Carthage/Build/iOS/WebImage.framework; sourceTree = "<group>"; };
 		556925151D62D02C0000C1C0 /* MarketRequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketRequestType.swift; sourceTree = "<group>"; };
 		556925171D62D1C60000C1C0 /* RecommendItemsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendItemsRequest.swift; sourceTree = "<group>"; };
+		5569251B1D62DF880000C1C0 /* ItemDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				55424C751D629F070045F6AE /* RecommendItemsViewController.swift */,
+				5569251B1D62DF880000C1C0 /* ItemDetailsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				55424C781D62A4AF0045F6AE /* RecommendItemCell.swift in Sources */,
 				55424C761D629F070045F6AE /* RecommendItemsViewController.swift in Sources */,
 				556925161D62D02C0000C1C0 /* MarketRequestType.swift in Sources */,
+				5569251C1D62DF880000C1C0 /* ItemDetailsViewController.swift in Sources */,
 				55424C5F1D629A6D0045F6AE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

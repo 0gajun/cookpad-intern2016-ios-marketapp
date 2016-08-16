@@ -50,4 +50,14 @@ class RecommendItemsViewController: UITableViewController {
         
         return cell
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let destination = segue.destinationViewController as? ItemDetailsViewController {
+            guard let selectedIndexPath = tableView.indexPathForSelectedRow else {
+                return
+            }
+            let item = items[selectedIndexPath.row]
+            destination.itemID = item.id
+        }
+    }
 }

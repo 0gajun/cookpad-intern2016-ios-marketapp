@@ -95,6 +95,7 @@
                                     <outlet property="nameLabel" destination="St2-a6-cSw" id="tDx-sY-Ngo"/>
                                     <outlet property="priceLabel" destination="tBE-A1-dTm" id="TQW-HY-SpM"/>
                                     <outlet property="thumbnailImageView" destination="18A-hc-En5" id="aTx-aM-hYd"/>
+                                    <segue destination="zp3-rP-dH7" kind="show" id="Hpw-J7-9Ob"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -108,6 +109,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qed-Br-R4K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1558" y="0.0"/>
+        </scene>
+        <!--Item Details View Controller-->
+        <scene sceneID="oJh-fh-5LP">
+            <objects>
+                <viewController id="zp3-rP-dH7" customClass="ItemDetailsViewController" customModule="Market" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tng-1j-S22"/>
+                        <viewControllerLayoutGuide type="bottom" id="36K-Cd-Jbd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0r4-Qm-uyu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gKQ-qa-Lf8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2310" y="0.0"/>
         </scene>
         <!--Item-->
         <scene sceneID="ptx-cV-JvA">
