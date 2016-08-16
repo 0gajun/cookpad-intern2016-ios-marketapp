@@ -227,6 +227,7 @@
                                 <connections>
                                     <outlet property="categoryImage" destination="Dis-BK-JbI" id="8PC-ud-dVg"/>
                                     <outlet property="nameLabel" destination="Joe-wY-iHH" id="xCV-rf-y12"/>
+                                    <segue destination="zp3-rP-dH7" kind="show" id="4jo-4P-3vz"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -357,4 +358,7 @@
             <point key="canvasLocation" x="746" y="747"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="4jo-4P-3vz"/>
+    </inferredMetricsTieBreakers>
 </document>
