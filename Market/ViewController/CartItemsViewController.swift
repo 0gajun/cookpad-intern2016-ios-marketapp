@@ -22,7 +22,7 @@ class CartItemsViewController: UITableViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        items = CartHolder.get().cartItems
+        items = CartHolder.get()
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

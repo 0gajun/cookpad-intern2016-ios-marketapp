@@ -290,6 +290,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXL-JY-NTg">
                                 <rect key="frame" x="248" y="453" width="105" height="30"/>
                                 <state key="normal" title="カートに入れる"/>
+                                <connections>
+                                    <action selector="onClickAddCart:" destination="zp3-rP-dH7" eventType="touchUpInside" id="P5R-WP-qVZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -309,7 +312,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="addCartButton" destination="LXL-JY-NTg" id="EHg-kX-iZa"/>
                         <outlet property="descriptionLabel" destination="di2-ZP-pdQ" id="4Wy-4X-uWY"/>
                         <outlet property="nameLabel" destination="wsK-0I-hin" id="0UV-qn-NXy"/>
                         <outlet property="priceLabel" destination="NEq-2p-031" id="7nA-g8-vO0"/>
@@ -455,6 +457,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Hpw-J7-9Ob"/>
+        <segue reference="4jo-4P-3vz"/>
     </inferredMetricsTieBreakers>
 </document>

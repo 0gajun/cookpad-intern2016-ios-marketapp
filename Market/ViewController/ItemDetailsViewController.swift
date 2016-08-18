@@ -16,9 +16,9 @@ class ItemDetailsViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
-    @IBOutlet weak var addCartButton: UIButton!
     
     var itemID: Int = 0
+    var item: Item? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +32,7 @@ class ItemDetailsViewController: UIViewController {
         Session.sendRequest(request) { result in
             switch result {
             case .Success(let response):
+                self.item = response
                 self.updateView(response)
             case .Failure(let error):
                 print(error)
@@ -45,5 +46,13 @@ class ItemDetailsViewController: UIViewController {
         descriptionLabel.text = item.desc
         priceLabel.text = "\(item.price)円"
         self.title = item.name
+    }
+    
+    @IBAction func onClickAddCart(sender: AnyObject) {
+        guard let item = self.item else {
+            return
+        }
+        let cartItem = CartItem(id: item.id, name:item.name , price: item.price, count: 1, imageURL: item.imageURL)
+        CartHolder.add(cartItem)
     }
 }

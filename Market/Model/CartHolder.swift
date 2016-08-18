@@ -12,15 +12,20 @@ import Foundation
 
 class CartHolder {
     static let holder = CartHolder()
+    var cartItems: [CartItem] = []
     
     private init() {
     }
     
-    static func get() -> CartHolder {
-        return holder
+    static func get() -> [CartItem] {
+        return holder.cartItems
     }
     
-    var cartItems: [CartItem] = []
-    
-    
+    static func add(cartItem: CartItem) {
+        if let index = holder.cartItems.indexOf({ $0.id == cartItem.id }) {
+            holder.cartItems[index].count += 1
+        } else {
+            holder.cartItems.append(cartItem)
+        }
+    }
 }
