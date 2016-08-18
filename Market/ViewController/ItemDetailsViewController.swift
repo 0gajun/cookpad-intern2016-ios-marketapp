@@ -54,5 +54,12 @@ class ItemDetailsViewController: UIViewController {
         }
         let cartItem = CartItem(id: item.id, name:item.name , price: item.price, count: 1, imageURL: item.imageURL)
         CartHolder.add(cartItem)
+        showAlert()
+    }
+    
+    private func showAlert() {
+        // FIXME: Deprecatedだが諦める
+        let alert = UIAlertView.init(title: "", message: "カートに追加しました", delegate: nil, cancelButtonTitle: "閉じる")
+        alert.show()
     }
 }
