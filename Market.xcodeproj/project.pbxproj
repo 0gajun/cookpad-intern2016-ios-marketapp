@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		550DE9241D65BC9700ACBFE0 /* PurchaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550DE9231D65BC9700ACBFE0 /* PurchaseRequest.swift */; };
 		55424C5F1D629A6D0045F6AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55424C5E1D629A6D0045F6AE /* AppDelegate.swift */; };
 		55424C661D629A6E0045F6AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55424C641D629A6E0045F6AE /* Main.storyboard */; };
 		55424C681D629A6E0045F6AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55424C671D629A6E0045F6AE /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		550DE9231D65BC9700ACBFE0 /* PurchaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseRequest.swift; sourceTree = "<group>"; };
 		55424C5B1D629A6D0045F6AE /* Market.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Market.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55424C5E1D629A6D0045F6AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55424C651D629A6E0045F6AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				556925291D62F22F0000C1C0 /* CategoryItemsRequest.swift */,
 				5569252D1D6303670000C1C0 /* CartItem.swift */,
 				5569252F1D6303890000C1C0 /* CartHolder.swift */,
+				550DE9231D65BC9700ACBFE0 /* PurchaseRequest.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				5569251E1D62E5180000C1C0 /* ItemRequest.swift in Sources */,
 				556925201D62EA690000C1C0 /* CategoryCell.swift in Sources */,
 				556925161D62D02C0000C1C0 /* MarketRequestType.swift in Sources */,
+				550DE9241D65BC9700ACBFE0 /* PurchaseRequest.swift in Sources */,
 				5569251C1D62DF880000C1C0 /* ItemDetailsViewController.swift in Sources */,
 				556925341D63051B0000C1C0 /* CartItemCell.swift in Sources */,
 				55424C5F1D629A6D0045F6AE /* AppDelegate.swift in Sources */,

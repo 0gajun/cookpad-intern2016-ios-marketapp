@@ -56,5 +56,4 @@ class CartItemsViewController: UITableViewController {
         
         return cell
     }
-    
 }

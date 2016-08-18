@@ -21,6 +21,10 @@ class CartHolder {
         return holder.cartItems
     }
     
+    static func clear() {
+        holder.cartItems.removeAll()
+    }
+    
     static func add(cartItem: CartItem) {
         if let index = holder.cartItems.indexOf({ $0.id == cartItem.id }) {
             holder.cartItems[index].count += 1
