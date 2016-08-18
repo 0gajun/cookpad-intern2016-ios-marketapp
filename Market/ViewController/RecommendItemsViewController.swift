@@ -15,9 +15,16 @@ class RecommendItemsViewController: UITableViewController {
             tableView.reloadData()
         }
     }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.tabBarItem.image = UIImage.fontAwesomeIconWithName(.Star, textColor: UIColor.blackColor(), size: CGSizeMake(30, 30))
+        self.tabBarItem.title = "おすすめ"
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tabBarController!.tabBarItem.image = UIImage.fontAwesomeIconWithName(.Github, textColor: UIColor.blackColor(), size: CGSizeMake(30, 30))
         tableView.estimatedRowHeight = RecommendItemCell.height
         tableView.rowHeight = UITableViewAutomaticDimension
     }

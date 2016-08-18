@@ -16,6 +16,12 @@ class CategoryViewController: UITableViewController {
             tableView.reloadData()
         }
     }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.tabBarItem.image = UIImage.fontAwesomeIconWithName(.Book, textColor: UIColor.blackColor(), size: CGSizeMake(30, 30))
+        self.tabBarItem.title = "カテゴリ"
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

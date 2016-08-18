@@ -20,9 +20,11 @@ class CategoryItemsViewController: UICollectionViewController {
     }
     
     var categoryID: Int = 0
+   
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tabBarController!.tabBarItem.image = UIImage.fontAwesomeIconWithName(.Github, textColor: UIColor.blackColor(), size: CGSizeMake(30, 30))
     }
     
     override func viewWillAppear(animated: Bool) {

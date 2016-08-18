@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FontAwesome
 
 class CartItemsViewController: UITableViewController {
     
@@ -16,6 +17,12 @@ class CartItemsViewController: UITableViewController {
         }
     }
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.tabBarItem.image = UIImage.fontAwesomeIconWithName(.ShoppingCart, textColor: UIColor.blackColor(), size: CGSizeMake(30, 30))
+        self.tabBarItem.title = "カート"
+    }
+   
     override func viewDidLoad() {
         super.viewDidLoad()
     }
