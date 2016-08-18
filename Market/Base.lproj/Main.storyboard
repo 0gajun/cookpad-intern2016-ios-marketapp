@@ -341,7 +341,7 @@
             </objects>
             <point key="canvasLocation" x="746" y="0.0"/>
         </scene>
-        <!--Cart Items View Controller-->
+        <!--カートの中身-->
         <scene sceneID="2Uk-VG-mkn">
             <objects>
                 <tableViewController id="0JI-6L-pgq" customClass="CartItemsViewController" customModule="Market" customModuleProvider="target" sceneMemberID="viewController">
@@ -411,11 +411,107 @@
                             <outlet property="delegate" destination="0JI-6L-pgq" id="wrA-X8-UL7"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="281-wM-J7s"/>
+                    <navigationItem key="navigationItem" title="カートの中身" id="281-wM-J7s">
+                        <barButtonItem key="rightBarButtonItem" title="購入する" id="Uwz-n1-0Qz">
+                            <connections>
+                                <segue destination="5uw-lf-jqA" kind="show" id="eav-wy-oOG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="purchaseButton" destination="Uwz-n1-0Qz" id="lzT-Ax-yB5"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eZW-oY-3Bu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="812" y="1527"/>
+        </scene>
+        <!--Purchase Confirmation View Controller-->
+        <scene sceneID="6Gt-V1-qUy">
+            <objects>
+                <viewController id="5uw-lf-jqA" customClass="PurchaseConfirmationViewController" customModule="Market" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hHN-5f-rvY"/>
+                        <viewControllerLayoutGuide type="bottom" id="OO4-mi-ll5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ASm-s4-y6W">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="注文内容 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rk4-G2-Azf">
+                                <rect key="frame" x="11" y="30" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CartItems" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ykb-9N-hCU">
+                                <rect key="frame" x="21" y="59" width="549" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="7MZ-jI-ia9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="合計金額" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1B-J0-C7i">
+                                <rect key="frame" x="21" y="88" width="549" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="お届け先 &amp; ご請求先:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODZ-3d-188">
+                                <rect key="frame" x="11" y="141" width="559" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="yuY-qW-Osj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="くっくぱっど太郎さま" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyy-1y-wWP">
+                                <rect key="frame" x="19" y="170" width="170" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="PQd-gg-3dB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHk-ID-pkN">
+                                <rect key="frame" x="247.5" y="260" width="105" height="30"/>
+                                <state key="normal" title="注文を確定する"/>
+                                <connections>
+                                    <action selector="doPurchase:" destination="5uw-lf-jqA" eventType="touchUpInside" id="06j-Wn-Obf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eHk-ID-pkN" firstAttribute="top" secondItem="gyy-1y-wWP" secondAttribute="bottom" constant="25" id="0QY-UN-zbM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ODZ-3d-188" secondAttribute="trailing" constant="10" id="3I7-GW-cdq"/>
+                            <constraint firstItem="gyy-1y-wWP" firstAttribute="leading" secondItem="ODZ-3d-188" secondAttribute="leading" constant="8" id="3tf-Bs-jWh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ykb-9N-hCU" secondAttribute="trailing" constant="10" id="8Uu-XK-zi5"/>
+                            <constraint firstItem="ODZ-3d-188" firstAttribute="leading" secondItem="Rk4-G2-Azf" secondAttribute="leading" id="I9W-kn-aX2"/>
+                            <constraint firstItem="gyy-1y-wWP" firstAttribute="top" secondItem="ODZ-3d-188" secondAttribute="bottom" constant="8" id="IVk-wv-kly"/>
+                            <constraint firstItem="I1B-J0-C7i" firstAttribute="top" secondItem="Ykb-9N-hCU" secondAttribute="bottom" constant="8" id="J9y-7J-Pr1"/>
+                            <constraint firstItem="ODZ-3d-188" firstAttribute="top" secondItem="I1B-J0-C7i" secondAttribute="bottom" constant="32" id="Vtv-yX-bzN"/>
+                            <constraint firstItem="Ykb-9N-hCU" firstAttribute="top" secondItem="Rk4-G2-Azf" secondAttribute="bottom" constant="8" id="YRc-u4-wLU"/>
+                            <constraint firstItem="Rk4-G2-Azf" firstAttribute="top" secondItem="hHN-5f-rvY" secondAttribute="bottom" constant="10" id="bpa-tL-50g"/>
+                            <constraint firstItem="Rk4-G2-Azf" firstAttribute="leading" secondItem="ASm-s4-y6W" secondAttribute="leadingMargin" constant="-9" id="dwt-U6-uOK"/>
+                            <constraint firstItem="eHk-ID-pkN" firstAttribute="centerX" secondItem="ASm-s4-y6W" secondAttribute="centerX" id="oFT-ki-Jif"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="I1B-J0-C7i" secondAttribute="trailing" constant="10" id="qkg-Cz-rj4"/>
+                            <constraint firstItem="Ykb-9N-hCU" firstAttribute="leading" secondItem="Rk4-G2-Azf" secondAttribute="leading" constant="10" id="sde-HE-wc0"/>
+                            <constraint firstItem="I1B-J0-C7i" firstAttribute="leading" secondItem="Ykb-9N-hCU" secondAttribute="leading" id="xm4-VT-VOu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cartItemsLabel" destination="Ykb-9N-hCU" id="dAV-Ni-nQ8"/>
+                        <outlet property="totalLabel" destination="I1B-J0-C7i" id="gm5-v7-A1X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RwN-YU-UkO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1558" y="1607"/>
         </scene>
         <!--カテゴリ-->
         <scene sceneID="UEb-RH-u8n">

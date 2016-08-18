@@ -34,6 +34,7 @@
 		556925301D6303890000C1C0 /* CartHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5569252F1D6303890000C1C0 /* CartHolder.swift */; };
 		556925321D6304890000C1C0 /* CartItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556925311D6304890000C1C0 /* CartItemsViewController.swift */; };
 		556925341D63051B0000C1C0 /* CartItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556925331D63051B0000C1C0 /* CartItemCell.swift */; };
+		55ACB3CD1D65B0A90063477A /* PurchaseConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ACB3CC1D65B0A90063477A /* PurchaseConfirmationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		5569252F1D6303890000C1C0 /* CartHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartHolder.swift; sourceTree = "<group>"; };
 		556925311D6304890000C1C0 /* CartItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartItemsViewController.swift; sourceTree = "<group>"; };
 		556925331D63051B0000C1C0 /* CartItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartItemCell.swift; sourceTree = "<group>"; };
+		55ACB3CC1D65B0A90063477A /* PurchaseConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseConfirmationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				556925251D62ECC70000C1C0 /* CategoryViewController.swift */,
 				556925271D62F1B90000C1C0 /* CategoryItemsViewController.swift */,
 				556925311D6304890000C1C0 /* CartItemsViewController.swift */,
+				55ACB3CC1D65B0A90063477A /* PurchaseConfirmationViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				556925221D62EAFE0000C1C0 /* Category.swift in Sources */,
 				556925301D6303890000C1C0 /* CartHolder.swift in Sources */,
 				556925181D62D1C60000C1C0 /* RecommendItemsRequest.swift in Sources */,
+				55ACB3CD1D65B0A90063477A /* PurchaseConfirmationViewController.swift in Sources */,
 				556925261D62ECC70000C1C0 /* CategoryViewController.swift in Sources */,
 				55424C781D62A4AF0045F6AE /* RecommendItemCell.swift in Sources */,
 				5569252A1D62F22F0000C1C0 /* CategoryItemsRequest.swift in Sources */,

@@ -10,6 +10,7 @@ import UIKit
 import FontAwesome
 
 class CartItemsViewController: UITableViewController {
+    @IBOutlet weak var purchaseButton: UIBarButtonItem!
     
     var items: [CartItem] = [] {
         didSet {
@@ -29,7 +30,16 @@ class CartItemsViewController: UITableViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        items = CartHolder.get()
+        self.items = CartHolder.get()
+        preparePurchaseButton()
+    }
+    
+    private func preparePurchaseButton() {
+        if self.items.isEmpty {
+            self.purchaseButton.enabled = false
+        } else {
+            self.purchaseButton.enabled = true
+        }
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
